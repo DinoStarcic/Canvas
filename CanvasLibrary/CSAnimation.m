@@ -284,7 +284,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.alpha = 0;
+    view.alpha = 1;
     view.transform = CGAffineTransformMakeTranslation(CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
